@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Matériaux - Guide Complet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Welcome Section -->
+    <section class="welcome-section active" id="welcome">
+        <div class="welcome-container">
+            <div class="welcome-background">
+                <div class="circle circle-1"></div>
+                <div class="circle circle-2"></div>
+                <div class="circle circle-3"></div>
+            </div>
+            <div class="welcome-content">
+                <h1 class="welcome-title">Les Matériaux</h1>
+                <p class="welcome-subtitle">Découvrez le monde fascinant des matériaux</p>
+                <button class="welcome-btn" onclick="enterSite()">Découvrir</button>
+                <div class="welcome-credits">
+                    <p>Créé par <strong>SOULAYMA DHAHBI</strong></p>
+                    <p>Développé par <strong>Med Aymen Troudi</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="main-content" id="mainContent">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-brand">Les Matériaux</div>
+            <div class="nav-links">
+                <a href="#metalliques" class="nav-link">Métalliques</a>
+                <a href="#organiques" class="nav-link">Organiques</a>
+                <a href="#mineraux" class="nav-link">Minéraux</a>
+                <a href="#composites" class="nav-link">Composites</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero-title">Classification des Matériaux</h2>
+                <p class="hero-description">Les matériaux sont classés en quatre grandes familles selon leur composition et leurs propriétés</p>
+            </div>
+        </section>
+
+        <!-- Materials Sections -->
+        <div class="container">
+            <!-- Matériaux Métalliques -->
+            <section class="material-section" id="metalliques">
+                <div class="section-header">
+                    <div class="section-number">01</div>
+                    <h2 class="section-title">Matériaux Métalliques</h2>
+                </div>
+                <div class="section-content">
+                    <div class="definition-card">
+                        <h3>Définition</h3>
+                        <p>Les matériaux métalliques sont composés d'atomes métalliques liés par des liaisons métalliques. Ils se caractérisent par leur conductivité électrique et thermique élevée, leur malléabilité et leur éclat.</p>
+                    </div>
+                    
+                    <!-- Performance Radar and Applications -->
+                    <div class="performance-applications-grid">
+                        <div class="radar-card">
+                            <h3>Radar de Performance</h3>
+                            <canvas id="radarMetalliques"></canvas>
+                        </div>
+                        <div class="applications-card">
+                            <h3>Domaines d'Application</h3>
+                            <div class="applications-list">
+                                <div class="application-item">
+                                    <span class="app-icon">🏗️</span>
+                                    <div>
+                                        <h4>Construction</h4>
+                                        <p>Structures métalliques, charpentes, armatures</p>
+                                    </div>
+                                </div>
+                                <div class="application-item">
+                                    <span class="app-icon">✈️</span>
+                                    <div>
+                                        <h4>Aéronautique</h4>
+                                        <p>Fuselages, moteurs, trains d'atterrissage</p>
+                                    </div>
+                                </div>
+                                <div class="application-item">
+                                    <span class="app-icon">🚗</span>
+                                    <div>
+                                        <h4>Automobile</h4>
+                                        <p>Châssis, carrosserie, composants moteur</p>
+                                    </div>
+                                </div>
+                                <div class="application-item">
+                                    <span class="app-icon">⚡</span>
+                                    <div>
+                                        <h4>Électrique</h4>
+                                        <p>Câblage, circuits, transformateurs</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="examples-grid">
+                        <div class="example-card" data-material="metal">
+                            <div class="card-icon">🔩</div>
+                            <h4>Acier</h4>
+                            <p>Alliage de fer et de carbone, utilisé dans la construction</p>
+                        </div>
+                        <div class="example-card" data-material="metal">
+                            <div class="card-icon">⚡</div>
+                            <h4>Aluminium</h4>
+                            <p>Léger et résistant à la corrosion, utilisé en aéronautique</p>
+                        </div>
+                        <div class="example-card" data-material="metal">
+                            <div class="card-icon">💰</div>
+                            <h4>Cuivre</h4>
+                            <p>Excellent conducteur électrique, utilisé en électricité</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Matériaux Organiques -->
+            <section class="material-section" id="organiques">
+                <div class="section-header">
+                    <div class="section-number">02</div>
+                    <h2 class="section-title">Matériaux Organiques</h2>
+                </div>
+                <div class="section-content">
+                    <div class="definition-card">
+                        <h3>Définition</h3>
+                        <p>Les matériaux organiques sont principalement composés de carbone et d'hydrogène. Ils proviennent du vivant ou sont synthétisés à partir de composés carbonés. Ils incluent les polymères et les matériaux naturels.</p>
+                    </div>
+                    
+                    <!-- Performance Radar and Applications -->
+                    <div class="performance-applications-grid">
+                        <div class="radar-card">
+                            <h3>Radar de Performance</h3>
+                            <canvas id="radarOrganiques"></canvas>
+                        </div>
+                        <div class="applications-card">
+                            <h3>Domaines d'Application</h3>
+                            <div class="applications-list">
+                                <div class="application-item">
+                                    <span class="app-icon">📦</span>
+                                    <div>
+                                        <h4>Emballage</h4>
+                                        <p>Contenants, films protecteurs, isolation</p>
+                                    </div>
+                                </div>
+                                <div class="application-item">
+                                    <span class="app-icon">👕</span>
+                                    <div>
+                                        <h4>Textile</h4>
+                                        <p>Vêtements, tissus d'ameublement, cordages</p>
+                                    </div>
+                                </div>
+                                <div class="application-item">
+                                    <span class="app-icon">🏠</span>
+                                    <div>
+                                        <h4>Mobilier</h4>
+                                        <p>Meubles en bois, revêtements, décoration</p>
+                                    </div>
+                                </div>
+                                <div class="application-item">
+                                    <span class="app-icon">🔬</span>
+                                    <div>
+                                        <h4>Médical</h4>
+                                        <p>Prothèses, équipements, emballages stériles</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="examples-grid">
+                        <div class="example-card" data-material="organic">
+                            <div class="card-icon">🪵</div>
+                            <h4>Bois</h4>
+                            <p>Matériau naturel renouvelable, utilisé en menuiserie</p>
+                        </div>
+                        <div class="example-card" data-material="organic">
+                            <div class="card-icon">🧴</div>
+                            <h4>Plastique (PVC)</h4>
+                            <p>Polymère synthétique, utilisé en plomberie et emballage</p>
+                        </div>
+                        <div class="example-card" data-material="organic">
+                            <div class="card-icon">🧵</div>
+                            <h4>Coton</h4>
+                            <p>Fibre naturelle végétale, utilisée en textile</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Matériaux Minéraux -->
+            <section class="material-section" id="mineraux">
+                <div class="section-header">
+                    <div class="section-number">03</div>
+                    <h2 class="section-title">Matériaux Minéraux</h2>
+                </div>
+                <div class="section-content">
+                    <div class="definition-card">
+                        <h3>Définition</h3>
+                        <p>Les matériaux minéraux sont d'origine naturelle, issus de roches ou de minéraux. Ils sont non-métalliques et non-organiques. Ils se caractérisent par leur dureté, leur résistance à la chaleur et leur fragilité.</p>
+                    </div>
+                    
+                    <!-- Performance Radar and Applications -->
+                    <div class="performance-applications-grid">
+                        <div class="radar-card">
+                            <h3>Radar de Performance</h3>
+                            <canvas id="radarMineraux"></canvas>
+                        </div>
+                        <div class="applications-card">
+                            <h3>Domaines d'Application</h3>
+                            <div class="applications-list">
+                                <div class="application-item">
+                                    <span class="app-icon">🏛️</span>
+                                    <div>
+                                        <h4>Bâtiment</h4>
+                                        <p>Béton, briques, tuiles, fondations</p>
+                                    </div>
+                                </div>
+                                <div class="application-item">
+                                    <span class="app-icon">🍽️</span>
+                                    <div>
+                                        <h4>Vaisselle</h4>
+                                        <p>Assiettes, tasses, plats en céramique</p>
+                                    </div>
+                                </div>
+                                <div class="application-item">
+                                    <span class="app-icon">🪟</span>
+                                    <div>
+                                        <h4>Vitrage</h4>
+                                        <p>Fenêtres, miroirs, pare-brise</p>
+                                    </div>
+                                </div>
+                                <div class="application-item">
+                                    <span class="app-icon">🔥</span>
+                                    <div>
+                                        <h4>Isolation thermique</h4>
+                                        <p>Réfractaires, fours, équipements haute température</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="examples-grid">
+                        <div class="example-card" data-material="mineral">
+                            <div class="card-icon">🪨</div>
+                            <h4>Céramique</h4>
+                            <p>Matériau dur et résistant à la chaleur, utilisé en vaisselle</p>
+                        </div>
+                        <div class="example-card" data-material="mineral">
+                            <div class="card-icon">🪟</div>
+                            <h4>Verre</h4>
+                            <p>Matériau transparent et fragile, utilisé en vitrage</p>
+                        </div>
+                        <div class="example-card" data-material="mineral">
+                            <div class="card-icon">🧱</div>
+                            <h4>Béton</h4>
+                            <p>Mélange de ciment et granulats, utilisé en construction</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Matériaux Composites -->
+            <section class="material-section" id="composites">
+                <div class="section-header">
+                    <div class="section-number">04</div>
+                    <h2 class="section-title">Matériaux Composites</h2>
+                </div>
+                <div class="section-content">
+                    <div class="definition-card">
+                        <h3>Définition</h3>
+                        <p>Les matériaux composites sont constitués d'au moins deux matériaux différents combinés pour obtenir des propriétés supérieures. Ils associent généralement une matrice et un renfort pour améliorer résistance et légèreté.</p>
+                    </div>
+                    
+                    <!-- Performance Radar and Applications -->
+                    <div class="performance-applications-grid">
+                        <div class="radar-card">
+                            <h3>Radar de Performance</h3>
+                            <canvas id="radarComposites"></canvas>
+                        </div>
+                        <div class="applications-card">
+                            <h3>Domaines d'Application</h3>
+                            <div class="applications-list">
+                                <div class="application-item">
+                                    <span class="app-icon">🏎️</span>
+                                    <div>
+                                        <h4>Sport automobile</h4>
+                                        <p>Carrosserie F1, pièces légères haute performance</p>
+                                    </div>
+                                </div>
+                                <div class="application-item">
+                                    <span class="app-icon">🚁</span>
+                                    <div>
+                                        <h4>Aérospatial</h4>
+                                        <p>Ailes d'avion, structures satellites</p>
+                                    </div>
+                                </div>
+                                <div class="application-item">
+                                    <span class="app-icon">⛵</span>
+                                    <div>
+                                        <h4>Nautisme</h4>
+                                        <p>Coques de bateaux, planches à voile</p>
+                                    </div>
+                                </div>
+                                <div class="application-item">
+                                    <span class="app-icon">🌉</span>
+                                    <div>
+                                        <h4>Génie civil</h4>
+                                        <p>Ponts, immeubles, structures renforcées</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="examples-grid">
+                        <div class="example-card" data-material="composite">
+                            <div class="card-icon">🎿</div>
+                            <h4>Fibre de Carbone</h4>
+                            <p>Composite léger et très résistant, utilisé en sport automobile</p>
+                        </div>
+                        <div class="example-card" data-material="composite">
+                            <div class="card-icon">🏗️</div>
+                            <h4>Béton Armé</h4>
+                            <p>Béton renforcé d'acier, utilisé en génie civil</p>
+                        </div>
+                        <div class="example-card" data-material="composite">
+                            <div class="card-icon">🛶</div>
+                            <h4>Fibre de Verre</h4>
+                            <p>Composite polyester-verre, utilisé en nautisme</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>Créé par</h4>
+                        <p><strong>SOULAYMA DHAHBI</strong></p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Développé par</h4>
+                        <p><strong>Med Aymen Troudi</strong></p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>À propos</h4>
+                        <p>Guide éducatif sur les matériaux</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Les Matériaux. Tous droits réservés.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
